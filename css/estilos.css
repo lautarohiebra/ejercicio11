@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 /* font-family: 'Roboto', sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
 /* font-family: 'Poppins', sans-serif; */
 
 * {
@@ -8,6 +8,7 @@ box-sizing: border-box;
 margin: 0;
 padding: 0px;
 font-size: 16px;
+font-family: 'Poppins', sans-serif;
 }
 
 :root{
@@ -18,4 +19,131 @@ font-size: 16px;
     --colorInput--focus:#4d6d63;
     --colorLegend:#4d6d63;
     --colorLegend--focus:#2b3d37;
+}
+
+body{
+    background-color: var(--colorFondo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    justify-content: center;
+    align-items: center;
+    border-top: 15px var(--colorLegend) solid;
+    border-bottom: 15px var(--colorLegend) solid;
+    border-left: 15px var(--colorFondo) solid;
+    border-right: 15px var(--colorFondo) solid;
+    margin: 20px 0;
+}
+
+    header h1{
+        display: block;
+        text-align: center;
+        font-size: 40px;
+        font-weight: bolder;
+        color: #ffffff;
+    }
+
+    .emojiHeader{
+        font-size: 50px;
+    }
+
+fieldset{
+    background-color: var(--colorFondoField);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+}
+
+legend{
+    background-color: var(--colorLegend);
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+    .legend--inicial{
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+    }
+
+p{
+    margin-bottom: 10px;
+    width: 80%;
+    text-align: center;
+}
+
+#nacionalidad{
+    width: 97%;
+}
+
+#infoAdicional{
+    width: 99%;
+    height: 90px;
+}
+
+input{
+    width: 100%;
+    border-radius: 5px;
+    border: solid 1px gray;
+    text-align: end;
+    padding:2px 5px;
+}
+
+textarea{
+    width: 100%;
+}
+
+select{
+    width: 100%;
+}
+
+.displayRow{
+    text-align: center;
+    display: row;
+    width: 80%;
+}
+
+    .input--displayRow{
+        width: fit-content;
+    }
+
+.division{
+    border-top: dotted #a6c1b9 13px;
+    width: 30%;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.actividades{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.actividadesLista input{
+    width: fit-content;
 }
