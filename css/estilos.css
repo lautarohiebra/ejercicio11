@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0px;
+font-size: 16px;
+}
+
+:root{
+    --colorFondo:#1f2023;
+    --colorFondoField:#d6e2de;
+    --colorFondoField--focus:#a6c1b9;
+    --colorInput:#ffffff;
+    --colorInput--focus:#4d6d63;
+    --colorLegend:#4d6d63;
+    --colorLegend--focus:#2b3d37;
+}

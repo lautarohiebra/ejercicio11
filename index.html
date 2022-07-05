@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+<!--     <link rel="stylesheet" href="css/estilos.css"> -->
+    <title>Afiliación</title>
+</head>
+<body>
+    <h1>Vení al Gym! <span>💪</span></h1>
+
+    <form action="">
+
+        <div class="container">
+            <fieldset class="datosPersonales">
+                <legend><span></span> Datos personales <span></span></legend>
+                
+                <p><label for="nombre">Nombre: *</label>
+                <input type="text" required id="nombre" name="nombre"></p>
+
+                
+                <p><label for="apellido">Apellido: *</label>
+                <input type="text" required id="apellido" name="apellido"></p>
+            
+                <p><label for="documento">Documento: *</label>
+                <input type="" required id="documento" name="documento"></p>
+                
+                <p><label for="nacionalidad">Nacionalidad: *</label>
+                <select type="search" required id="nacionalidad" name="nacionalidad">
+                    <option value="0" select-disabled>- Seleccionar -</option>
+                    <option value="1">Argentina</option>
+                    <option value="2">Brasileña</option>
+                    <option value="3">Uruguaya</option>
+                    <option value="4">Otra</option>
+                </select></p>
+
+                <p><label for="infoAdicional">Contanos un poco de vos...</label>
+                <textarea name="infoAdicional" id="infoAdicional" ></textarea></p>
+            
+                <p><label for="sexo">Sexo: *</label></p>
+                <label><input type="radio" name="sexo" value="femenino">Femenino</label>
+                <label><input type="radio" name="sexo" value="masculino">Masculino</label>
+                <label><input type="radio" name="sexo" value="otro">Otro</label>
+
+            </fieldset>
+        </div>
+
+    <div class="division"></div>
+
+        <div class="container">
+            <fieldset class="datosContacto">
+                <legend>Datos de Contacto</legend>
+
+                <p><label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" placeholder="Código de área y número"></p>
+
+                <p><label for="email">Dirección de correo electrónico: *</label>
+                <input type="email" required id="email" placeholder="Ej: mail@gmail.com"></p>
+
+            </fieldset>
+        </div>
+         
+    <div class="division"></div>
+
+        <div class="container">
+            <fieldset class="actividades">
+                <legend>Actividades</legend>
+                <p class="actividades__p">Por favor indicá cuáles actividades te interesan.</p>
+                
+                <h2>Sede Palermo</h2>
+                    
+                    <label for="basquetPalermo"><input type="checkbox" name="basquetPalermo" id="basquetPalermo">Básquet </label>
+                    <label for="boxeoPalermo"> <input type="checkbox" name="boxeoPalermo" id="boxeoPalermo">Boxeo</label>
+                    <label for="futbolPalermo"> <input type="checkbox" name="futbolPalermo" id="futbolPalermo">Fútbol</label>
+                    <label for="tenisPalermo"> <input type="checkbox" name="tenisPalermo" id="tenisPalermo">Tenis</label>
+
+                <h2>Sede Rosario</h2>
+                    
+                    <label for="basquetRosario"> <input type="checkbox" name="basquetRosario" id="basquetRosario">Básquet</label>
+                    <label for="futbolRosario"> <input type="checkbox" name="futbolRosario" id="futbolRosario">Fútbol</label>
+                    <label for="rugbyRosario"> <input type="checkbox" name="rugbyRosario" id="rugbyRosario">Rugby</label>
+                    <label for="voleyRosario"> <input type="checkbox" name="voleyRosario" id="voleyRosario">Voley</label>
+
+            </fieldset>
+        </div>
+            
+        <div class="container--noBcg">
+            <p><input class="novedadesCondiciones" type="checkbox" name="condiciones" id="condiciones"><label for="condiciones">Acepto las condiciones</label></p>
+            <p><input class="novedadesCondiciones" type="checkbox" name="novedades" id="novedades"><label for="novedades">Deseo recibir novedades</label></p>
+
+            <p>*: Campo obligatorio</p>
+        </div>
+            
+        <div class="container--btn">
+                <button type="submit">Iniciar Afiliación</button>
+                <button type="reset">Restablecer</button>
+        </div>
+    </form>
+</body>
+</html>
