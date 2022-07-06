@@ -17,12 +17,16 @@
 
     <form action="#">
 
+<!-- ---------------- -->
+<!-- Datos Personales -->
+<!-- ---------------- -->
+
         <div class="container">
             <fieldset class="datosPersonales">
                 <legend><span><i class="em em-raising_hand" aria-role="presentation" aria-label="HAPPY PERSON RAISING ONE HAND"></i></span> <span class="legend--inicial">D</span>atos <span class="legend--inicial">P</span>ersonales <span><i class="em em-eyes" aria-role="presentation" aria-label="EYES"></i></span></legend>
                 
                 <p><label for="nombre">Nombre: *</label></p>
-                    <p><input type="text" required id="nombre" name="nombre"></p>
+                <p><input type="text" required id="nombre" name="nombre" autofocus></p>
                 
                 <p><label for="apellido">Apellido: *</label></p>
                 <p><input type="text" required id="apellido" name="apellido"></p>
@@ -51,7 +55,12 @@
             </fieldset>
         </div>
 
-    <div class="division"></div>
+        <div class="division"></div>
+
+<!-- -------------- -->
+<!-- Datos Contacto -->
+<!-- -------------- -->
+
 
         <div class="container">
             <fieldset class="datosContacto">
@@ -68,10 +77,15 @@
          
     <div class="division"></div>
 
+<!-- ----------------- -->
+<!-- Datos Actividades -->
+<!-- ----------------- -->
+
+
         <div class="container">
             <fieldset class="actividades">
                 <legend><span><i class="em em-bicyclist" aria-role="presentation" aria-label="BICYCLIST"></i></span> <span class="legend--inicial">A</span>ctividades <span><i class="em em-woman-cartwheeling" aria-role="presentation" aria-label=""></i></span></legend>
-                <p class="actividades__p">Por favor indicá cuáles actividades te interesan.</p>
+                <p>Por favor indicá cuáles actividades te interesan.</p>
                 
                 <h2>Sede Palermo</h2>
                     <div class="actividadesLista">
@@ -91,9 +105,17 @@
             </fieldset>
         </div>
             
-        <div class="container--noBcg">
-            <p><input class="novedadesCondiciones" type="checkbox" name="condiciones" id="condiciones"><label for="condiciones">Acepto las condiciones</label></p>
-            <p><input class="novedadesCondiciones" type="checkbox" name="novedades" id="novedades"><label for="novedades">Deseo recibir novedades</label></p>
+        <div class="container--noBgc">
+            <div class="container--noBgc--condiciones">
+                <label for="condiciones">
+                    <input class="novedadesCondiciones" required type="checkbox" name="condiciones" id="condiciones">Acepto las condiciones *
+                </label>
+            </div>
+            <div class="container--noBgc--novedades">
+                <label for="novedades">
+                    <input class="novedadesCondiciones" type="checkbox" name="novedades" id="novedades">Deseo recibir novedades
+                </label>
+            </div>
 
             <p>*: Campo obligatorio</p>
         </div>
@@ -103,5 +125,7 @@
                 <button type="reset">Restablecer</button>
         </div>
     </form>
+
+<script src="js/main.js"></script>
 </body>
 </html>
