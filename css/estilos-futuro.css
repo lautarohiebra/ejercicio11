@@ -166,6 +166,47 @@ input::placeholder{
     color: rgba(255, 255, 255, 0.534);
 }
 
+.displayRow{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sexo_label{
+    color: #f7f4f6;
+    text-shadow: 0 0 5px black;
+    background-color:#447efa ;
+    border-radius: 10px;
+    padding-right: 15px;
+    margin: 0 5px;
+    width: 22%;
+    height: 30px;
+    overflow: hidden;
+}
+
+.sexo_label:hover{
+    color: #01010a;
+    text-shadow: 0 0 5px rgb(243, 57, 212);
+    background-color:#9e2898 ;
+}
+
+.sexo_label:focus-within{
+    color: #01010a;
+    text-shadow: 0 0 5px rgb(243, 57, 212);
+    background-color:#9e2898 ;
+}
+
+
+.input--displayRow{
+    margin-left: 5px;
+}
+
+.input--displayRow:checked{
+    height:90%;
+    box-shadow: inset rgb(255, 93, 255) 0 0 200px;
+}
 
 /* ---------- */
 /* Responsive */
