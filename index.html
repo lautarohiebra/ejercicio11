@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet"> <!-- Stylesheet para visualizar los emojis -->
 
-    <!--<link rel="stylesheet" href="css/estilos.css"> -->
+<!--     <link rel="stylesheet" href="css/estilos.css"> -->
     <link rel="stylesheet" href="css/estilos-futuro.css">
     <title>Afiliación</title>
 </head>
@@ -16,7 +16,7 @@
     <header class="container" id="header">
         <h1>Vení al Gym! <span class="emojiHeader"><i class="em-svg em-muscle" aria-role="presentation" aria-label="FLEXED BICEPS"></i></span></h1>
     </header>
-    
+    <div class="fondo"></div>
     <form action="#">
 
 <!-- ---------------- -->
@@ -50,9 +50,9 @@
 
                 <p><label for="sexo">Sexo: *</label></p>
             <div class="displayRow">
-                <label class="sexo_label"><input class="input--displayRow" type="radio" name="sexo" value="femenino"> Femenino</label>
-                <label class="sexo_label"><input class="input--displayRow" type="radio" name="sexo" value="masculino"> Masculino</label>
-                <label class="sexo_label"><input class="input--displayRow" type="radio" name="sexo" value="otro"> Otro</label>
+                <label class="sexo_label femenino"><input id="optionFemenino" class="input--displayRow" type="radio" name="sexo" value="femenino"> Femenino</label>
+                <label class="sexo_label masculino"><input id="optionMasculino" class="input--displayRow" type="radio" name="sexo" value="masculino"> Masculino</label>
+                <label class="sexo_label otro"><input id="optionOtro" class="input--displayRow" type="radio" name="sexo" value="otro"> Otro</label>
             </div>
             </fieldset>
         </div>
