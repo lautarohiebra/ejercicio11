@@ -33,6 +33,10 @@ fieldset:focus-within{
     background-color: var(--colorFondoField--focus);
 }
 
+fieldset:focus-within>legend{
+    background-color: var(--colorLegend--focus);
+}
+
 input:focus, textarea:focus, select:focus{
     background-color: var(--colorInput--focus);
 }
