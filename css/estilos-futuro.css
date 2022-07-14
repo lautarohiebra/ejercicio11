@@ -19,6 +19,21 @@ font-size: 16px;
 font-family:'Share Tech Mono', monospace;
 }
 
+#cambio{
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    left: 1vw;
+    top:1vh;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 999;
+}
+
+    #cambio:hover{
+        filter: invert();
+    }
+
 
 body{
     background-color: var(--colorFondo);
@@ -81,39 +96,39 @@ form{
     margin-bottom: 30px;
 }
 
-fieldset{
-    border-radius: 5px;
-    border: 0px;
-    background-color: rgba(2, 0, 29, 0.185);
-}
-
-fieldset:hover{
-    background-color: rgba(74, 61, 255, 0.986);
-    box-shadow: 0 0 5px black;
-}
-
-legend{
-    font-family: 'teko', sans-serif;
-    font-size: 40px;
-    color: #fdfdfd;
-    text-shadow: 2px 2px 20px rgb(3, 1, 3);
-    background-color: #447efa;
-    padding: 10px 15px;
-    border-radius:  50px 50px 50px 0;
-    border-bottom: 10px inset #173e92;
-}
-
-    .legend--inicial{
-        font-size: 42px;
-        font-weight: 600;
-        font-family: 'teko';
+    fieldset{
+        border-radius: 5px;
+        border: 0px;
+        background-color: rgba(2, 0, 29, 0.185);
     }
+
+    fieldset:hover{
+        background-color: rgba(74, 61, 255, 0.986);
+        box-shadow: 0 0 5px black;
+    }
+
+    legend{
+        font-family: 'teko', sans-serif;
+        font-size: 40px;
+        color: #fdfdfd;
+        text-shadow: 2px 2px 20px rgb(3, 1, 3);
+        background-color: #447efa;
+        padding: 10px 15px;
+        border-radius:  50px 50px 50px 0;
+        border-bottom: 10px inset #173e92;
+    }
+
+        .legend--inicial{
+            font-size: 42px;
+            font-weight: 600;
+            font-family: 'teko';
+        }
 
 .em{
     display: none;
 }
 
-label{
+label, .sexo{
     color: rgb(255, 255, 255);
     font-size: 25px;
 }

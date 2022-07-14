@@ -6,27 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet"> <!-- Stylesheet para visualizar los emojis -->
 
-<!--<link rel="stylesheet" href="css/estilos.css"> -->
+<link id="css" rel="stylesheet" href="css/estilos.css">
 <!-- <link rel="stylesheet" href="css/estilos-futuro.css"> -->
-<link rel="stylesheet" href="css/estilos-retro.css">
+<!-- <link rel="stylesheet" href="css/estilos-retro.css"> -->
     <title>Afiliación</title>
 </head>
 
 
-<body>   
+<body> 
+    <button id="cambio" onclick="cambio()"><img src="img/svg/magic.svg" alt="Varíta Mágica cambiadora de estilos"></button>
     <header class="container" id="header">
-        <h1>Vení al Gym! <span class="emojiHeader"><i class="em-svg em-muscle" aria-role="presentation" aria-label="FLEXED BICEPS"></i></span></h1>
+        <h1>Vení al Gym! <span class="emojiHeader"><i class="em-svg em-muscle"></i></span></h1>
     </header>
     <div class="fondo"></div>
     <form action="#">
 
-<!-- ---------------- -->
+
 <!-- Datos Personales -->
-<!-- ---------------- -->
+
 
         <div class="container">
             <fieldset class="datosPersonales">
-                <legend><span><i class="em em-raising_hand" aria-role="presentation" aria-label="HAPPY PERSON RAISING ONE HAND"></i></span> <span class="legend--inicial">D</span>atos <span class="legend--inicial">P</span>ersonales <span><i class="em em-eyes" aria-role="presentation" aria-label="EYES"></i></span></legend>
+                <legend><span><i class="em em-raising_hand"></i></span> <span class="legend--inicial">D</span>atos <span class="legend--inicial">P</span>ersonales <span><i class="em em-eyes"></i></span></legend>
                 
                 <p><label for="nombre">Nombre: *</label></p>
                 <p><input type="text" required id="nombre" name="nombre" autofocus></p>
@@ -35,11 +36,11 @@
                 <p><input type="text" required id="apellido" name="apellido"></p>
             
                 <p><label for="documento">Documento: *</label></p>
-                <p><input type="" required id="documento" name="documento"></p>
+                <p><input type="text" required id="documento" name="documento"></p>
                 
                 <p><label for="nacionalidad">Nacionalidad: *</label></p>
-                <p><select type="search" required id="nacionalidad" name="nacionalidad">
-                    <option value="" select-disabled>- Seleccionar -</option>
+                <p><select required id="nacionalidad" name="nacionalidad">
+                    <option value="">- Seleccionar -</option>
                     <option value="1">Argentina</option>
                     <option value="2">Brasileña</option>
                     <option value="3">Uruguaya</option>
@@ -49,7 +50,7 @@
                 <p><label for="infoAdicional">Contanos un poco de vos...</label></p>
                 <p><textarea name="infoAdicional" id="infoAdicional" ></textarea></p>
 
-                <p><label for="sexo">Sexo: *</label></p>
+                <p class="sexo">Sexo: *</p>
             <div class="displayRow">
                 <label class="sexo_label femenino"><input id="optionFemenino" class="input--displayRow" type="radio" name="sexo" value="femenino"> Femenino</label>
                 <label class="sexo_label masculino"><input id="optionMasculino" class="input--displayRow" type="radio" name="sexo" value="masculino"> Masculino</label>
@@ -60,14 +61,13 @@
 
         <div class="division"></div>
 
-<!-- -------------- -->
+
 <!-- Datos Contacto -->
-<!-- -------------- -->
 
 
         <div class="container">
             <fieldset class="datosContacto">
-                <legend> <span><i class="em em-iphone" aria-role="presentation" aria-label="MOBILE PHONE"></i></span> <span class="legend--inicial">D</span>atos de <span class="legend--inicial">C</span>ontacto <span><i class="em em-email" aria-role="presentation" aria-label="ENVELOPE"></i></span></legend>
+                <legend> <span><i class="em em-iphone"></i></span> <span class="legend--inicial">D</span>atos de <span class="legend--inicial">C</span>ontacto <span><i class="em em-email"></i></span></legend>
 
                 <p><label for="telefono">Teléfono</label></p>
                 <p><input type="tel" id="telefono" placeholder="Código de área y número"></p>
@@ -80,14 +80,13 @@
          
     <div class="division"></div>
 
-<!-- ----------------- -->
+
 <!-- Datos Actividades -->
-<!-- ----------------- -->
 
 
         <div class="container">
             <fieldset class="actividades">
-                <legend><span><i class="em em-bicyclist" aria-role="presentation" aria-label="BICYCLIST"></i></span> <span class="legend--inicial">A</span>ctividades <span><i class="em em-woman-cartwheeling" aria-role="presentation" aria-label=""></i></span></legend>
+                <legend><span><i class="em em-bicyclist"></i></span> <span class="legend--inicial">A</span>ctividades <span><i class="em em-woman-cartwheeling"></i></span></legend>
                 <p>Por favor indicá cuáles actividades te interesan.</p>
                 
                 <h2>Sede Palermo</h2>
@@ -96,7 +95,7 @@
                         <label for="boxeoPalermo"> <input type="checkbox" name="boxeoPalermo" id="boxeoPalermo">Boxeo</label>
                         <label for="futbolPalermo"> <input type="checkbox" name="futbolPalermo" id="futbolPalermo">Fútbol</label>
                         <label for="tenisPalermo"> <input type="checkbox" name="tenisPalermo" id="tenisPalermo">Tenis</label>
-                    </div class="actividadesLista">
+                    </div>
                 
                 <h2>Sede Rosario</h2>
                     <div class="actividadesLista">
@@ -104,7 +103,7 @@
                         <label for="futbolRosario"> <input type="checkbox" name="futbolRosario" id="futbolRosario">Fútbol</label>
                         <label for="rugbyRosario"> <input type="checkbox" name="rugbyRosario" id="rugbyRosario">Rugby</label>
                         <label for="voleyRosario"> <input type="checkbox" name="voleyRosario" id="voleyRosario">Voley</label>
-                    </div class="actividadesLista">
+                    </div>
             </fieldset>
         </div>
             
@@ -124,8 +123,8 @@
         </div>
             
         <div class="container--btn">
-                <button type="submit">Iniciar Afiliación</button>
-                <button type="reset">Restablecer</button>
+                <button class="submit" type="submit">Iniciar Afiliación</button>
+                <button class="reset" type="reset">Restablecer</button>
         </div>
     </form>
 <script src="js/main.js"></script>
