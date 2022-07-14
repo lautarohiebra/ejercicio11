@@ -1,9 +1,15 @@
 :root{
-    --colorFondo: #83b3b3;
-    --colorSecundario: #3c7f72;
-    --colorOscuro: #4c4c4e;
+    --colorFondo: #d7cbbe;
+    --colorNaranjaOscuro: #fd5f16;
+    --colorRojo:rgb(238, 77, 77);
+    --colorAmarillo:rgb(255, 196, 0);
+    --colorVerde: #3c7f72;
+    --colorOscuro: #3b3b3b;
     --colorNegro: #282129;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+/* font-family: 'Berkshire Swash', cursive; */
 
 @font-face{
     font-family: "SodaFountain-inline";
@@ -41,8 +47,11 @@ font-family: "SodaFountain-regular";
 body{
     background-color: var(--colorFondo);
     background-image: url(../img/img_fondo/fondo-retro.png);
+    background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    filter: contrast(85%);
 }
 
 .container{
@@ -50,37 +59,145 @@ body{
 }
 
 header{
-    width: fit-content;
-    height: 400px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-/*     background-color: var(--colorSecundario);
-    box-shadow: inset var(--colorOscuro) 0px 1px 20px;
-    border-bottom: #282129 5px double; */
+    margin-top: 30px;
+/*     background-image: url(../img/logos/logo-retro-no-bg.png);
+    background-repeat: no-repeat;
+    background-position: 50% 5px;
+    background-size: contain; */
 }
 
 h1{
     font-family:"deftone-stylus";
-    font-size: 100px;
-    transform: rotateZ(-6.5deg);
+    font-size: 50px;
+/*     transform: rotateZ(-6.5deg); */
+    transform: rotateZ(-4deg);
     text-shadow:
-    -3px 0 0 var(--colorSecundario),
-    -5px 0 var(--colorNegro);
-    font-weight: 200;
-    color: #282129;
+    1px -0.5px var(--colorNegro),
+    2px -1px var(--colorNaranjaOscuro),
+    3px -1.5px var(--colorNaranjaOscuro),
+    4px -2px var(--colorNaranjaOscuro),
+    5px -2.5px var(--colorNaranjaOscuro),
+    6px -3px var(--colorNaranjaOscuro),
+    7px -3.5px var(--colorRojo),
+    8px -4px var(--colorRojo),
+    9px -4.5px var(--colorNegro),
+    -1px 1px var(--colorNaranjaOscuro);
+    color: #ffe985;
     padding: 15px;
     font-style: normal;
-/*     box-shadow:
-    -4px 3px 1px black,
-    -5px 4px 1px white,
-    -10px 8px 1px #282129; */
+    filter: blur(0.2px);
 }
 
-.fondo{
-    background-color: #2821291a;
-    width: 100%;
-    height: 25px;
-    position: absolute;
-    top: 90px;
+form{
+    margin-left:21%;
+    margin-right:22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px -0.5px var(--colorNegro);
+    padding: 15px 5px;
+    border-radius: 5px;
+    border: #111111fd 2px solid;
+}
+
+.division{
+    height: 5px;
+}
+
+.datosPersonales{
+    background-color: #60a396;
+    box-shadow:
+    2px -1px var(--colorVerde),
+    3px -1.5px var(--colorVerde),
+    4px -2px var(--colorVerde),
+    5px -2.5px var(--colorVerde),
+    6px -3px var(--colorVerde),
+    7px -3.5px var(--colorVerde),
+    8px -4px var(--colorVerde),
+    9px -4.5px var(--colorVerde),
+    10px -5px var(--colorVerde),
+    11px -5.5px var(--colorVerde),
+    12px -6px var(--colorVerde),
+    13px -6.5px black,
+    14px -7px black;
+}
+
+.datosContacto{
+    background-color: rgb(211, 70, 77);
+    box-shadow:
+    2px -1px var(--colorRojo),
+    3px -1.5px var(--colorRojo),
+    4px -2px var(--colorRojo),
+    5px -2.5px var(--colorRojo),
+    6px -3px var(--colorRojo),
+    7px -3.5px var(--colorRojo),
+    8px -4px var(--colorRojo),
+    9px -4.5px var(--colorRojo),
+    10px -5px var(--colorRojo),
+    11px -5.5px var(--colorRojo),
+    12px -6px var(--colorRojo),
+    13px -6.5px black,
+    14px -7px black;
+}
+
+.actividades{
+    background-color: #ffe055;
+    box-shadow:
+    2px -1px var(--colorAmarillo),
+    3px -1.5px var(--colorAmarillo),
+    4px -2px var(--colorAmarillo),
+    5px -2.5px var(--colorAmarillo),
+    6px -3px var(--colorAmarillo),
+    7px -3.5px var(--colorAmarillo),
+    8px -4px var(--colorAmarillo),
+    9px -4.5px var(--colorAmarillo),
+    10px -5px var(--colorAmarillo),
+    11px -5.5px var(--colorAmarillo),
+    12px -6px var(--colorAmarillo),
+    13px -6.5px black,
+    14px -7px black;
+}
+
+legend{
+    width: fit-content;
+    margin-left: 0;
+    text-align: center;
+    padding: 5px 10px;
+    border: 2px inset rgb(0, 0, 0);
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+    legend span{
+        font-size: 20px;
+    }
+
+    .datosPersonales legend{
+        background-color: #72c4b3;
+    }
+    .datosContacto legend{
+        background-color: rgb(240, 105, 105);
+    }
+    .actividades legend{
+        background-color: #f4f772;
+    }
+
+label{
+    color: black;
+    text-shadow: 0 0 50px white;
+    font-size: 16px;
+    font-family: 'Berkshire Swash', cursive;
 }
