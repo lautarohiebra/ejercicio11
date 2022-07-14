@@ -5,16 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet"> <!-- Stylesheet para visualizar los emojis -->
+    <link rel="stylesheet" href="css/estilo-botones.css">
+        
+    <link id="css" rel="stylesheet" href="css/estilos.css">
 
-<link id="css" rel="stylesheet" href="css/estilos.css">
-<!-- <link rel="stylesheet" href="css/estilos-futuro.css"> -->
-<!-- <link rel="stylesheet" href="css/estilos-retro.css"> -->
     <title>Afiliación</title>
 </head>
 
 
-<body> 
-    <button id="cambio" onclick="cambio()"><img src="img/svg/magic.svg" alt="Varíta Mágica cambiadora de estilos"></button>
+<body>
+    <div class="barraBotones">
+        <button class="botonAside" id="cambio" onclick="cambio()"><img src="img/svg/magic.svg" alt="Varíta Mágica cambiadora de estilos"></button>
+        <button class="botonAside" id="save" onclick="save()"><img src="img/svg/save.svg" alt="Guardar estilo"></button>
+    </div>
     <header class="container" id="header">
         <h1>Vení al Gym! <span class="emojiHeader"><i class="em-svg em-muscle"></i></span></h1>
     </header>

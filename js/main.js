@@ -1,13 +1,5 @@
 console.log(document.querySelector('title').innerText);
 
-let estilo1="../css/estilos-futuro.css"
-let estilo2="../css/estilos-retro.css"
-let estilo3="../css/estilos.css"
-
-const estilos=[estilo1,estilo2,estilo3]
-
-console.log(estilos);
-
 
 let i = "estilo-1"
 console.log("Actualmente visualizando el estilo Original");
@@ -30,4 +22,29 @@ function cambio() {
         i="estilo-1"
         console.log(i);
         document.getElementById('css').href=("css/estilos.css")
+    }}
+
+
+localStorage.setItem('original','css/estilos.css')
+localStorage.setItem('futuro','css/estilos-futuro.css')
+localStorage.setItem('retro','css/estilos-retro.css')
+
+function save() {
+    if (i=="estilo-1") {
+        console.warn("Guardando Tema");
+        localStorage.setItem('estiloGuardado','css/estilos.css')
+        var savedStyle = localStorage.getItem('estiloGuardado')
+        document.getElementById('css').href.innerText=localStorage.getItem('estiloGuardado')
+    }
+    else if (i=="estilo-2"){
+        console.warn("Guardando Tema");
+        localStorage.setItem('estiloGuardado','css/estilos-futuro.css')
+        var savedStyle = localStorage.getItem('estiloGuardado')
+        document.getElementById('css').href.innerText=localStorage.getItem('estiloGuardado')
+    }
+    else if (i="estilo-3"){
+        console.warn("Guardando Tema");
+        localStorage.setItem('estiloGuardado','css/estilos-retro.css')
+        var savedStyle = localStorage.getItem('estiloGuardado')
+        document.getElementById('css').href.innerText=localStorage.getItem('estiloGuardado')
     }}

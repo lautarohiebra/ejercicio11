@@ -1,0 +1,21 @@
+.barraBotones{
+    position: fixed;
+    left: 0vw;
+    top:1vh;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    padding: 3px 3px;
+    background-color: rgba(32, 32, 32, 0.925);
+}
+
+    .barraBotones button{
+        margin: 5px;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+
+    .botonAside:hover{
+        filter: invert();
+    }
